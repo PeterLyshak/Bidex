@@ -1,0 +1,99 @@
+.technologies {
+	padding-top: 30px;
+	padding-bottom: 40px;
+	
+	position: relative;
+	background-color: #fcfcfc;
+	
+	&__wrapper {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	
+	&__heading {
+		font-size: 39px;
+		line-height: 1;
+		margin-bottom: 60px;
+	}
+	
+	&__item {
+		padding-left: 120px;
+	}
+	
+	&__title {
+		font-weight: 700;
+		font-size: 22px;
+		line-height: 1;
+		text-transform: uppercase;
+	}
+	
+	&__text {
+		font-size: 20px;
+		line-height: 1.2;
+		padding-right: 0px;
+	}
+	
+	
+	
+}
+
+
+@media @mobile {
+	.technologies {
+		
+		
+		&__wrapper {
+			padding: 0 30px;
+		}
+		
+		&__item {
+			margin-bottom: 50px;
+		}
+	}
+}
+
+@media @tablet {
+	.technologies {
+		
+		&__wrapper {
+			padding: 0 50px;
+		}
+		
+		&__item {
+			margin-bottom: 50px;
+		}
+	}
+}
+
+@media @desktop {
+	.technologies {
+		padding-top: 70px;
+		
+		&__wrapper {
+			padding-right: 70px;
+			padding-left: 70px;
+		}
+		
+		&__heading {
+			padding: 0 260px;
+			margin-bottom: 90px;
+		}
+		
+		&__item {
+			width: 430px;
+			margin-bottom: 140px;
+		}
+		
+	}
+}
+
+
+
+
+

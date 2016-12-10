@@ -1,0 +1,114 @@
+.banners {
+	background: @yellow-color;
+	position: relative;
+	
+	&__wrapper {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+	}
+	
+	&__item {
+		text-transform: uppercase;
+		color: @dark-gray-color;
+		
+		&--1 {background-color: @yellow-block-1;}
+		&--2 {background-color: @yellow-block-2;}
+		&--3 {background-color: @yellow-block-3;}
+		&--4 {background-color: @yellow-block-4;}
+		
+	}
+	
+	&__heading {
+		display: block;
+		font-weight: 700;
+		font-size: 16px;
+	}
+	
+	&__number {
+		display: inline-block;
+		font-weight: 900;
+		font-size: 68px;
+		position: relative;
+	}
+	
+	&__bottom {
+		display: block;
+	}
+	
+	&__sub {
+		font-weight: 400;
+		font-size: 23px;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+	
+}
+
+@media @mobile {
+	.banners {
+		
+		&__wrapper {
+			padding: 0;
+			flex-direction: column;
+			justify-content: center;
+		}
+		
+		&__item {
+			width: 100%;
+			padding: 30px 20px;
+		}
+		
+		&__sub {
+			right: -10px;
+		}
+	}
+}
+
+@media @tablet {
+	.banners {
+		
+		&__wrapper {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			padding: 0;
+		}
+		
+		&__item {
+			width: 50%;
+			padding: 30px 20px;
+		}
+		
+		&__sub {
+			right: -10px;
+		}
+		
+		&__button {
+			display: none;
+		}
+	}
+}
+
+@media @desktop {
+	.banners {
+		
+		&__item {
+			width: 25%;
+			padding: 95px 55px;
+		}
+		
+		&__number {
+			display: block;
+		}
+		
+		&__button {
+			display: block;
+		}
+	}
+}
+
+

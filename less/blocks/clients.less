@@ -1,0 +1,64 @@
+.clients {
+	background-color: #f1f1f1;
+	padding-top: 70px;
+	padding-bottom: 40px;
+	
+	&__wrapper {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		position: relative;
+	}
+	
+	&__item {
+		vertical-align: baseline;
+	}
+}
+
+@media @mobile {
+	.clients {
+		
+		&__wrapper {
+			padding: 0 40px;
+		}
+		
+		&__item {
+			width: 50%;
+			margin: 0 10px;
+			margin-bottom: 30px;
+			
+		}
+	}
+}
+
+@media @tablet {
+	.clients {
+		
+		&__item {
+			margin: 0 15px;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+@media @desktop {
+	.clients {
+		padding-bottom: 90px;
+		
+		&__wrapper {
+			justify-content: space-around;
+		}
+		
+		&__item {
+			margin: auto 0;
+		}
+	}
+}
+
+
+

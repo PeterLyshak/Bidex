@@ -1,0 +1,139 @@
+.stitches-sprite(@x: 0, @y: 0, @width: 0, @height: 0) {
+    background-position: @x @y;
+    width: @width;
+    height: @height;
+}
+
+.clients-sprite {
+    background-image: url("../img/clients-sprite.png");    background-repeat: no-repeat;
+    display: block;
+
+    &.sprite-avonix-logo {
+        .stitches-sprite(-5px, -5px, 180px, 33px);
+    }
+
+    &.sprite-criteo-logo {
+        .stitches-sprite(-5px, -48px, 141px, 39px);
+    }
+
+    &.sprite-intango-logo {
+        .stitches-sprite(-5px, -97px, 130px, 47px);
+		
+		@media @desktop {
+			margin-top: 20px;
+		}
+    }
+
+    &.sprite-madgic-logo {
+        .stitches-sprite(-5px, -154px, 130px, 25px);
+    }
+
+    &.sprite-revenue-logo {
+        .stitches-sprite(-195px, -5px, 142px, 37px);
+    }
+}
+.algo-1, .algo-2, .algo-3, .algo-4, .botsafe, .displaybanners, .inc-roi, .mobile-popunder, .mobilebanners, .performane, .popunder, .registration, .ssps, .statistics, .support, .tracking{
+	background-position: left top;
+}
+
+.algo-1{
+	background: url("../img/icons-content/algo-1.png") no-repeat;
+	background-position: 0 center;
+}
+
+.algo-2{
+	background: url("../img/icons-content/algo-2.png") no-repeat;
+	background-position: 0 center;
+}
+
+.algo-3{
+	background: url("../img/icons-content/algo-3.png") no-repeat;
+	background-position: 0 center;
+}
+
+.algo-4{
+	background: url("../img/icons-content/algo-4.png") no-repeat;
+	background-position: 0 center;
+}
+
+.botsafe{
+	background: url("../img/icons-content/botsafe.png") no-repeat;
+}
+
+.displaybanners{
+	background: url("../img/icons-content/displaybanners.png") no-repeat;
+}
+
+.inc-roi{
+	background: url("../img/icons-content/inc-roi.png") no-repeat;
+}
+
+.mobile-popunder{
+	background: url("../img/icons-content/mobile-popunder.png") no-repeat;
+}
+
+.mobilebanners{
+	background: url("../img/icons-content/mobilebanners.png") no-repeat;
+	
+	@media @tablet {
+		background-position: 30px 30px !important;
+	}
+}
+
+.performane{
+	background: url("../img/icons-content/performane.png") no-repeat;
+}
+
+.popunder{
+	background: url("../img/icons-content/popunder.png") no-repeat;
+	background-size: 100px;
+}
+
+.registration{
+	background: url("../img/icons-content/registration.png") no-repeat;
+}
+
+.ssps{
+	background: url("../img/icons-content/ssps.png") no-repeat;
+}
+
+.statistics{
+	background: url("../img/icons-content/statistics.png") no-repeat;
+}
+
+.support{
+	background: url("../img/icons-content/support.png") no-repeat;
+}
+
+.tracking{
+	background: url("../img/icons-content/tracking.png") no-repeat;
+}
+
+.fb-ico {
+	background: url("../img/icons-social/fb-ico.png") 0 0 no-repeat;
+	background-size: cover;
+	height: 18px;
+	width: 9px;
+}
+
+.tw-ico {
+	background: url("../img/icons-social/tw-ico.png")  0 0 no-repeat;
+	background-size: cover;
+	height: 14px;
+	width: 17px;
+}
+
+.vk-ico {
+	background: url("../img/icons-social/vk-ico.png") 0 0 no-repeat;
+	background-size: cover;
+	height: 11px;
+	width: 21px;
+}
+
+.lk-ico {
+	background: url("../img/icons-social/inkedin-ico.png") 0 0 no-repeat;
+	background-size: cover;
+	height: 15px;
+	width: 17px;
+}
+
