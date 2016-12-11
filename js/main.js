@@ -12,8 +12,7 @@ $(document).ready(function() {
 	$(".select").styler({});
 	
    	$('.page-header__toggle').click(function(){
-	$(".page-header__nav").toggleClass(".page-header__nav--opened")
-	$('.page-header__toggle').toggleClass('page-header__toggle--opened');
+	$(".page-header__nav").toggleClass("page-header__nav--opened");
    });
 
 	
