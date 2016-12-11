@@ -445,12 +445,12 @@ template {
 }
 @media only screen and (min-width: 768px) {
   .container {
-    min-width: 760px;
+    min-width: 740px;
   }
 }
 @media only screen and (min-width: 1169px) {
   .container {
-    min-width: 1170px;
+    min-width: 1160px;
   }
 }
 .page-button-yellow {
@@ -1345,12 +1345,12 @@ template {
 }
 @media only screen and (min-width: 768px) and only screen and (min-width: 768px) {
   .banners__wrapper {
-    min-width: 760px;
+    min-width: 740px;
   }
 }
 @media only screen and (min-width: 768px) and only screen and (min-width: 1169px) {
   .banners__wrapper {
-    min-width: 1170px;
+    min-width: 1160px;
   }
 }
 @media only screen and (min-width: 1169px) {
