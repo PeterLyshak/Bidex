@@ -101,7 +101,7 @@
 
 @media @mobile-tablet {
 	.only-mobile {
-		display: block !important;
+		display: inline-block !important;
 	}
 	.page-header {
 		position: fixed;
@@ -109,7 +109,7 @@
 		top: 0;
 		left: 0;
 		background-color: rgba(0,0,0,0.8);
-		box-shadow: 0px 2px 4px 0 rgba(0,0,0,0.5);
+		box-shadow: 0px 1px 4px 0 rgba(0,0,0,0.5);
 		padding-top: 20px;
 		
 		z-index: 50;
@@ -196,12 +196,17 @@
 			margin-bottom: 20px;
 		}
 		
+		&__menu-user {
+			text-align: center;
+		}
+		
 		&__menu-registration {
 			outline: none;
 			text-decoration: none;
-			max-width: 200px;
+			width: 140px;
 			margin-top: 20px;
 			margin-bottom: 10px;
+			text-align: center;
 
 			font-family: "Lato";
 			font-size: 16px;
@@ -211,7 +216,7 @@
 			border: 1px solid transparent;
 			border-radius: 10px;
 
-			padding: 12px 45px;
+			padding: 12px 25px;
 			margin-left: 7px;
 			transition: all 0.3s;
 
@@ -225,8 +230,9 @@
 		&__menu-login {
 			outline: none;
 			text-decoration: none;
-			max-width: 200px;
+			width: 140px;
 			margin-bottom: 20px;
+			text-align: center;
 
 			font-family: "Lato";
 			font-size: 16px;
@@ -236,7 +242,7 @@
 			border: 1px solid transparent;
 			border-radius: 10px;
 
-			padding: 12px 45px;
+			padding: 12px 25px;
 			margin-left: 7px;
 			transition: all 0.3s;
 
