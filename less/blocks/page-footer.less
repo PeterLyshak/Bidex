@@ -28,7 +28,6 @@
 		display: block;
 		outline: none;
 		text-decoration: none;
-		text-align: right;
 		font-family: "Lato";
 		font-weight: 400;
 		font-size: 14px;
@@ -86,7 +85,34 @@
 
 @media @mobile {
 	.page-footer {
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		padding-top: 55px;
 		
+		&__logo {
+			margin-right: 20px;
+		}
+		
+		&__contacts {
+			margin-top: 40px;
+			margin-bottom: 50px;
+			text-align: center;
+			width: 100%;
+		}
+		
+		&__email {
+			margin-bottom: 20px;
+		}
+		
+		&__icon:first-child {
+			margin-left: 0;
+		}
+		
+		&__copyright {
+			flex-direction: column;
+			margin-bottom: 40px;
+		}
 	}
 }
 
@@ -94,6 +120,8 @@
 	.page-footer {
 		flex-direction: row;
 		padding-top: 55px;
+		padding-left: 30px;
+		padding-right: 30px;
 		
 		&__adress {
 			margin-left: 70px;
@@ -102,6 +130,12 @@
 		
 		&__email {
 			margin-bottom: 40px;
+		}
+		
+		&__copyright {
+			flex-direction: column;
+			margin-top: 40px;
+			margin-bottom: 50px;
 		}
 		
 	}

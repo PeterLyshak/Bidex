@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
   	<meta charset="utf-8">
@@ -5,7 +6,7 @@
   
   	<title>Bidex</title>
   
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  	<meta name="viewport" content="initial-scale=1.0, width=device-width">
   	
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -19,9 +20,15 @@
 </head>
 <body>
 	
+
 	<header class="page-header">
 		<div class="page-header__wrapper  container">
 			<div class="page-header__logo"></div>
+			
+			<div class="page-header__btn-burger">
+				<input class="page-header__menu-checkbox" type="checkbox" id="menu-button">
+				<label for="menu-button" class="page-header__menu-icon"><span></span></label> 
+			</div>
 
 			<ul class="page-header__nav">
 				<li class="page-header__item"><a href="#" class="page-header__link">Главная</a></li>
@@ -46,6 +53,7 @@
 			</div>
 		</div>
 	</header>
+
 	
 	<div id="carousel" class="owl-carousel">
 		<div class="slide">
@@ -74,7 +82,7 @@
 	</section>
 	
 	<section class="banners">
-		<div class="banners__wrapper container">
+		<div class="banners__wrapper">
 			<div class="banners__item banners__item--1">
 				<span class="banners__heading">Regular Banner</span>
 				<span class="banners__number">12.03 <span class="banners__sub">M</span></span>
@@ -216,7 +224,7 @@
 			STEKALEX s.r.o.<br>Lasenicka 1512, Kyje, 198 00 Praha 9<br>Praha, Czech Republic<br>VAT ID CZ27442624
 		</div>
 		
-		<div class="page-footer__contancts">
+		<div class="page-footer__contacts">
 			<a href="mailto:support@bidexchanger.com" class="page-footer__email">support@bidexchanger.com</a>
 			
 			<div class="page-footer__social">
@@ -233,8 +241,6 @@
 			<a href="#" class="page-footer__copyright-link">Privacy Policy</a>
 		</div>
 	</footer>
-	
-
 </body>
 </html>
 
