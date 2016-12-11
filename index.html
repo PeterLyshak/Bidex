@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
   	<meta charset="utf-8">
   	<meta http-equiv="X-UA-Compatible" content="IE=edge">
   	<title>Bidex</title>
-  	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   	
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -12,12 +12,12 @@
 	<meta name="format-detection" content="telephone=no">
   	<meta name="theme-color" content="#ffd602">
   	<meta name="msapplication-navbutton-color" content="#ffd602">
-  	<meta name="viewport" content="ya-title=#ffd602, ya-dock=fade">
   	
   	<link rel="stylesheet" href="css/main.css">
   	<script src="js/jquery-1.9.1.min.js"></script>
+  	<script src="js/jquery.formstyler.min.js"></script>
   	<script src="js/owl.carousel.js"></script>
-  	<script src="js/owl.js"></script>
+  	<script src="js/main.js"></script>
 </head>
 <body>
 	
@@ -25,10 +25,7 @@
 		<div class="page-header__wrapper container">
 			<div class="page-header__logo"></div>
 			
-			<div class="page-header__btn-burger">
-				<input class="menu-button" type="checkbox" id="menu-button">
-				<label for="menu-button" class="page-header__menu-icon"><span></span></label> 
-			</div>
+			<div class="page-header__toggle"><span></span></div>
 
 			<ul class="page-header__nav">
 				<li class="page-header__item"><a href="#" class="page-header__link">Главная</a></li>
@@ -38,19 +35,10 @@
 				<li class="page-header__item"><a href="#" class="page-header__link">Контакты</a></li>
 				<li class="page-header__item only-mobile"><a href="#" class="page-header__menu-registration only-mobile">Регистрация</a></li>
 				<li class="page-header__item only-mobile"><a href="#" class="page-header__menu-login only-mobile">Вход</a></li>
-				<select name="#" id="#" class="page-header__menu-select only-mobile">
-					<option value="" class="page-header__option">Ru</option>
-					<option value="" class="page-header__option">En</option>
-					<option value="" class="page-header__option">Fr</option>
-					<option value="" class="page-header__option">Esp</option>
-					<option value="" class="page-header__option">Ger</option>
-					<option value="" class="page-header__option">Ned</option>
-				</select>
-				
 			</ul>
 
 			<div class="page-header__user">
-				<select name="#" id="#" class="page-header__select">
+				<select name="#" id="#" class="page-header__select select">
 					<option value="" class="page-header__option">Ru</option>
 					<option value="" class="page-header__option">En</option>
 					<option value="" class="page-header__option">Fr</option>

@@ -17,6 +17,11 @@
 		margin: 0;
 		padding: 0;
 		outline: none;
+		display: none;
+		
+		&--opened {
+			display: block;
+		}
 	}
 	
 	&__link {
@@ -37,12 +42,9 @@
 	}
 	
 	&__select {
-		background-color: transparent;
-		outline: none;
-		color: #fff;
-		height: 40px;
-		display: none;
-		padding: 13px 12px;
+		
+		display: none !important;
+		
 	}
 		
 	&__registration {
@@ -93,28 +95,8 @@
 }
 
 .only-mobile {
-	display: none;
+	display: none !important;
 }
-
-.menu-button {
-	position: absolute;
-  	clip: rect(0, 0, 0, 0);
-}
-
-.menu-button:checked ~ .page-header__menu-icon span {
-	background-color: transparent;
-	
-	&::before {
-		transform: rotate(45deg);
-		top: 0px;
-	}
-	
-	&::after {
-		transform: rotate(-45deg);
-		top: 0px;
-	}
-}
-
 
 
 @media @mobile-tablet {
@@ -132,10 +114,65 @@
 		
 		z-index: 50;
 		
-		&__nav {
-			display: none;
+		
+   		&__toggle {
+			cursor: pointer;
+			display: block;
+			font-size: 0;
+			height: 90px;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 70px;
+			z-index: 10;
+	 		transition: all 0.2s;
+			
 		}
 		
+		&__toggle span {
+			display: block;
+			width: 50px;
+			height: 4px;
+			background-color: #fff;
+			position: relative;
+			top: 40px;
+			left: 20px;
+			
+			&::before {
+				content: "";
+				display: block;
+				width: 50px;
+				height: 4px;
+				background-color: #fff;
+				position: absolute;
+				top: -10px;
+			}
+			
+			&::after {
+				content: "";
+				display: block;
+				width: 50px;
+				height: 4px;
+				background-color: #fff;
+				position: absolute;
+				top: 10px;
+			}
+		}
+		
+		&__toggle--opened span {
+			background-color: transparent;
+			
+			&::after {
+				transform: rotate(-45deg);
+				top: 0;
+			}
+			
+			&::before {
+				transform: rotate(45deg);
+				top: 0;
+			}
+		}
+
 		&__link {
 			display: block;
 		}
@@ -144,47 +181,6 @@
 			margin: 0 auto;
 			text-align: center;
 			margin-bottom: 20px;
-		}
-		
-		&__menu-icon {
-			cursor: pointer;
-			display: block;
-			position: absolute;
-			
-			padding: 20px 10px;
-			top: 20px;
-			left: 10px;
-			user-select: none;
-			
-		}
-		
-		&__menu-icon span {
-			background-color: #fff;
-			display: block;
-			height: 4px;
-			width: 50px;
-			
-			position: relative;
-			transition: all 0.3s ease-out;
-			
-			&::before, &::after {
-				content: "";
-				background-color: #fff;
-				display: block;
-				
-				height: 100%;
-				width: 100%;
-				position: absolute;
-				transition: all 0.2s ease-out;
-			}
-			
-			&::before {
-				top: 10px;
-			}
-			
-			&::after {
-				top: -10px;
-			}
 		}
 		
 		&__menu-registration {
@@ -245,14 +241,12 @@
 			outline: none;
 			color: #fff;
 			height: 40px;
-			padding: 13px 12px;
+			padding: 0 12px;
 		}
 	}
-	
-	.menu-button:checked ~ .page-header__nav {
-		display: block;
-	}
 }
+
+
 
 @media @desktop {
 	.page-header {
@@ -260,6 +254,14 @@
 		top: 0;
 		left: 0;
 		padding-top: 44px;
+		
+		&__toggle {
+			display: none;
+		}
+		
+		&__nav {
+			display: block;
+		}
 		
 		&__wrapper {
 			position: relative;
@@ -278,7 +280,7 @@
 		}
 		
 		&__registration, &__login, &__select {
-			display: inline-block;
+			display: inline-block !important;
 		}
 	}
 }

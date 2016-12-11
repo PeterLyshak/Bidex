@@ -9,6 +9,12 @@ $(document).ready(function() {
           navigationText: []
   });
 	
+	$(".select").styler({});
+	
+   	$('.page-header__toggle').click(function(){
+	$(".page-header__nav").toggleClass(".page-header__nav--opened")
+	$('.page-header__toggle').toggleClass('page-header__toggle--opened');
+   });
+
+	
 });
-
-
