@@ -17,6 +17,9 @@
   	<meta name="viewport" content="ya-title=#ffd602, ya-dock=fade">
   	
   	<link rel="stylesheet" href="css/main.css">
+  	<script src="js/jquery-1.9.1.min.js"></script>
+  	<script src="js/owl.carousel.js"></script>
+  	<script src="js/owl.js"></script>
 </head>
 <body>
 	
@@ -26,7 +29,7 @@
 			<div class="page-header__logo"></div>
 			
 			<div class="page-header__btn-burger">
-				<input class="page-header__menu-checkbox" type="checkbox" id="menu-button">
+				<input class="menu-button" type="checkbox" id="menu-button">
 				<label for="menu-button" class="page-header__menu-icon"><span></span></label> 
 			</div>
 
@@ -36,6 +39,17 @@
 				<li class="page-header__item"><a href="#" class="page-header__link">Рекламным сетям</a></li>
 				<li class="page-header__item"><a href="#" class="page-header__link">FAQ</a></li>
 				<li class="page-header__item"><a href="#" class="page-header__link">Контакты</a></li>
+				<li class="page-header__item only-mobile"><a href="#" class="page-header__menu-registration only-mobile">Регистрация</a></li>
+				<li class="page-header__item only-mobile"><a href="#" class="page-header__menu-login only-mobile">Вход</a></li>
+				<select name="#" id="#" class="page-header__menu-select only-mobile">
+					<option value="" class="page-header__option">Ru</option>
+					<option value="" class="page-header__option">En</option>
+					<option value="" class="page-header__option">Fr</option>
+					<option value="" class="page-header__option">Esp</option>
+					<option value="" class="page-header__option">Ger</option>
+					<option value="" class="page-header__option">Ned</option>
+				</select>
+				
 			</ul>
 
 			<div class="page-header__user">
@@ -56,7 +70,7 @@
 
 	
 	<div id="carousel" class="owl-carousel">
-		<div class="slide">
+		<div class="slide slide--1">
 			<div class="slide__content container">
 				<h1 class="slide__title">Алгоритмы решают всё<br>
 				<span class="slide__small">А вы отдыхаете.</span>
@@ -65,6 +79,34 @@
 				<div class="slide__line"></div>
 
 				<p class="slide__text">Наши алгоритмы выкупа работают на вас.<br>Увеличение RIO без участия человека.</p>
+
+				<a href="#" class="slide__btn">Подробнее</a>
+			</div>
+		</div>
+		
+		<div class="slide slide--2">
+			<div class="slide__content container">
+				<h1 class="slide__title">Твой траф  - твои правила!<br>
+				<span class="slide__small">Хватит платить за ботов!</span>
+				</h1>
+				
+				<div class="slide__line"></div>
+
+				<p class="slide__text">Автоматические правила экономят твои нервы и деньги. </p>
+
+				<a href="#" class="slide__btn">Подробнее</a>
+			</div>
+		</div>
+		
+		<div class="slide slide--3">
+			<div class="slide__content container">
+				<h1 class="slide__title">Арбитраж - это просто!<br>
+				<span class="slide__small">Легкий старт-легкие деньги</span>
+				</h1>
+				
+				<div class="slide__line"></div>
+
+				<p class="slide__text">Удобный и быстрый запуск рекламных кампаний в более чем 10 рекламных сетях! Поддержка PopUp, Banners на десктоп и мобильных устройствах. </p>
 
 				<a href="#" class="slide__btn">Подробнее</a>
 			</div>
