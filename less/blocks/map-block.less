@@ -1,0 +1,50 @@
+.map-block {
+	width: 100%;
+	
+	&__wrapper {
+		background-image: url("../img/map-bg.png");
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		background-position: center bottom 90px;
+		
+		border-bottom: 1px solid #f4f4f4;
+	}
+}
+
+
+@media @mobile {
+	.map-block {
+		
+		&__wrapper {
+			height: 630px;
+			
+			background-size: 700px auto;
+			background-position: center bottom 30px;
+		}
+	}
+}
+
+@media @tablet {
+	.map-block {
+		
+		&__heading {
+			padding: 0 40px;
+		}
+		
+		&__wrapper {
+			height: 800px;
+			background-size: 1000px auto;
+		}
+	}
+}
+
+@media @desktop {
+	.map-block {
+		
+		
+		&__wrapper {
+			height: 900px;
+			background-size: 100% auto;
+		}
+	}
+}

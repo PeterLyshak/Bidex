@@ -1,26 +1,9 @@
-.carousel {
-	position: relative;
-	top: 0;
-	left: 0;
-}
-.slide {
+.static-slide {
 	width: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
 	
 	&--1 {
-		background-image: url("../img/bg-3.jpg");
-	}
-	
-	&--2 {
-		background-image: url("../img/bg-2.jpg");
-	}
-	
-	&--3 {
-		background-image: url("../img/bg-1.jpg");
-	}
-	
-	&--4 {
 		background-image: url("../img/bg-4.jpg");
 	}
 	
@@ -32,20 +15,11 @@
 		color: @yellow-color;
 	}
 	
-	&__line {
-		height: 4px;
-		background-color: #fff;
-		
-		margin-top: 30px;
-		margin-bottom: 35px;
-	}
-	
 	&__text {
 		margin-top: 0;
 		margin-bottom: 35px;
 		color: #fff;
-		font-size: 18px;
-		
+		font-size: 18px;	
 	}
 	
 	&__btn {
@@ -68,15 +42,26 @@
 }
 
 @media @mobile {
-	.slide {
+	.static-slide {
 		height: 660px;
 		padding-top: 160px;
 		text-align: center;
-		padding-left: 10px;
-		padding-right: 10px;
+			
 		
 		&__title {
-			font-size: 40px;
+			font-size: 30px;
+			margin-bottom: 50px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		
+		&__small {
+			display: block;
+			margin-top: 25px;
+			font-size: 17px;
+			line-height: 30px;
+			text-align: left;
+			width: 90%;
 		}
 		
 		&__text {
@@ -93,7 +78,7 @@
 }
 
 @media @tablet {
-	.slide {
+	.static-slide {
 		height: 700px;
 		padding-top: 180px;
 		padding-bottom: 40px;
@@ -102,10 +87,15 @@
 		&__title {
 			padding: 0 40px;
 			text-align: center;
+			font-size: 45px;
+			margin-bottom: 50px;
 		}
 		
 		&__small {
-			font-size: 28px;
+			display: block;
+			margin-top: 30px;
+			font-size: 25px;
+			line-height: 35px;
 		}
 		
 		&__text {
@@ -125,16 +115,23 @@
 }
 
 @media @desktop {
-	.slide {
+	.static-slide {
 		height: 92vh;
-		padding-top: 20vh;
+		padding-top: 25vh;
 		padding-bottom: 0;
 		text-align: left;
 		
 		&__title {
 			padding: 0;
-			max-width: 510px;
+			max-width: 800px;
 			text-align: left;
+			font-size: 50px;
+			line-height: 57px;
+		}
+		
+		&__small {
+			font-size: 21px;
+			line-height: 37px;
 		}
 		
 		&__text {
@@ -155,12 +152,3 @@
 		}
 	}
 }
-
-
-
-
-
-
-
-
-

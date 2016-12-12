@@ -1,0 +1,59 @@
+.statistic {
+	width: 100%;
+	
+	&__heading {
+		margin-top: 0;
+	}
+	
+	&__wrapper {
+		height: 320px;
+		background-image: url("../img/devices.jpg");
+		background-repeat: no-repeat;
+		background-size: 320px auto;
+		background-position: center center;
+	}
+	
+}
+
+@media @mobile {
+	.statistic {
+		padding-bottom: 30px;
+		
+		&__wrapper {
+			background-position: center bottom;
+		}
+	}
+}
+
+@media @tablet {
+	.statistic {
+		padding-top: 90px;
+		
+		
+		&__wrapper {
+			height: 710px;
+			background-image: url("../img/devices.jpg");
+			background-repeat: no-repeat;
+			background-size: 100% auto;
+			background-position: center center;
+		}
+	}
+}
+
+
+@media @desktop {
+	.statistic {
+		
+		&__wrapper {
+			height: 910px;
+			background-size: 1138px auto;
+		}
+	}
+}
+
+
+
+
+
+
+
