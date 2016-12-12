@@ -1,0 +1,53 @@
+.spoiler {
+	margin-top: 40px;
+	
+	&__title {
+		position: relative;
+		background-color: #fcfcfc;
+		border-left: 8px solid @yellow-color;
+		width: 100%;
+		cursor: pointer;
+		
+		padding-top: 15px;
+		padding-bottom: 18px;
+		padding-left: 20px;
+		padding-right: 50px;
+		
+		font-size: 18px;
+		font-weight: 700;
+		
+		&::after {
+			content: "^";
+			display: inline-block;
+			width: 25px;
+			height: 25px;
+			text-align: center;
+			vertical-align: middle;
+			position: absolute;
+			right: 20px;
+			top: 50%;
+			margin-top: -12px;
+			
+			transform: rotate(180deg);
+			
+			border: 1px solid #000;
+			border-radius: 50%;
+		}
+	}
+	
+	&__body {
+		padding-top: 40px;
+		font-size: 18px;
+	}
+	
+}
+
+@media @mobile {
+	.spoiler {
+		
+		&__body {
+			padding-left: 25px;
+			padding-right: 25px;
+		}
+	}
+}

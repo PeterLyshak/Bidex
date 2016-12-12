@@ -14,6 +14,11 @@ $(document).ready(function() {
    	$('.page-header__toggle').click(function(){
 	$(".page-header__nav").toggleClass("page-header__nav--opened");
    });
+	
+	$('.spoiler__body').hide();
+	$('.spoiler__title').click(function(){
+    $(this).next().slideToggle();
+});
 
 	
 });
