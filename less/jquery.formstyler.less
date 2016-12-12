@@ -235,10 +235,10 @@
 	cursor: pointer;
 }
 .jq-selectbox__select {
-	height: 40px;
+	height: 41px;
 	padding: 8px 25px 0 10px;
-	border: 1px solid #fff;
 	border-radius: 10px;
+	border: 1px solid transparent;
 	background: transparent;
 	font-size: 15px;
 	color: #fff;
@@ -247,13 +247,14 @@
 	border-color: @yellow-color;
 }
 .jq-selectbox__select:active {
+	border: 1px solid #fff;
 	background: transparent;
 }
 .jq-selectbox.focused .jq-selectbox__select {
-	border: 1px solid #fff;
+	border-color: #fff;
 }
 .jq-selectbox.disabled .jq-selectbox__select {
-	border-color: #fff;
+	border-color: transparent;
 	background: transparent;
 	box-shadow: none;
 	color: #fff;
@@ -294,7 +295,7 @@
 .jq-selectbox__dropdown {
 	box-sizing: border-box;
 	width: 62px;
-	margin: -10px 0 0;
+	margin: -13px 0 0;
 	padding: 0;
 	padding-top: 10px;
 	border: 1px solid #fff;
