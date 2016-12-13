@@ -14,6 +14,7 @@
 
 @media @mobile {
 	.map-block {
+		display: none;
 		
 		&__wrapper {
 			height: 630px;
@@ -21,6 +22,12 @@
 			background-size: 700px auto;
 			background-position: center bottom 30px;
 		}
+	}
+}
+
+@media @map-mobile {
+	.map-block {
+		display: block;
 	}
 }
 
