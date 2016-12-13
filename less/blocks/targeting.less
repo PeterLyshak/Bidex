@@ -35,21 +35,19 @@
 
 
 @media @mobile {
-	.only-mobile {
-		display: block;
-	}
 	
 	.targeting {
-		height: 780px;
+		height: 1750px;
 		position: relative;
 		background-size: 320px auto;
-		background-position: center bottom -20px;
+		background-position: center top 250px;
 		
 		&__heading {
 			padding: 0 60px;
 		}
 		
 		&__blocks {
+			flex-direction: column;
 			justify-content: center;
 		}
 		
@@ -57,30 +55,21 @@
 			padding-top: 80px;
 		}
 		
-		&__list {
-			position: absolute;
-			bottom: 140px;
-			width: 50%;
-			
-			&--left {
-				left: 0;
-			}
-			
-			&--right {
-				right: 0;
-			}
+		&__list:first-child {
+			margin-top: 400px;
 		}
 		
 		&__item {
 			position: relative;
 			display: block;
-			width: 100%;
+			width: 300px;
 			height: 60px;
 			text-align: center;
 			background-color: rgba(255,255,255,0.6);
 			font-size: 16px;
 			text-transform: uppercase;
 			line-height: 67px;
+			margin: 0 auto;
 			
 
 			margin-bottom: 12px;
@@ -88,14 +77,33 @@
 			&--no-padding {
 				line-height: 15px;
 				padding-top: 15px;
+				
+			}
+			
+			&::after {
+				content: "";
+				display: block;
+				width: 1px;
+				height: 10px;
+				background-color: #000;
 				position: absolute;
 				
-				&:nth-child(3) {
-					bottom: 0;
-				}
-				&:last-child {
-					bottom: 70px;
-				}
+				top: -11px;
+				left: 50%;
+			}
+			
+			&--first::before {
+				content: "";
+				display: block;
+				height: 11px;
+				width: 11px;
+				background-clip: transparent;
+				border: 1px solid #000;
+				border-radius: 50%;
+				position: absolute;
+				top: -22px;
+				left: 50%;
+				margin-left: -5px;
 			}
 		}
 	}

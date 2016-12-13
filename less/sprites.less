@@ -32,6 +32,38 @@
         .stitches-sprite(-195px, -5px, 142px, 37px);
     }
 }
+
+.stitches-clients2(@x: 0, @y: 0, @width: 0, @height: 0) {
+    background-position: @x @y;
+    width: @width;
+    height: @height;
+}
+
+.clients2-sprite {
+    background-image: url("../img/clients2-sprite.png");   background-repeat: no-repeat;
+    display: block;
+
+    &.epom {
+        .stitches-clients2(-10px, -10px, 129px, 46px);
+    }
+
+    &.exo-click {
+        .stitches-clients2(-10px, -76px, 131px, 39px);
+    }
+
+    &.hilltop {
+        .stitches-clients2(-10px, -135px, 153px, 34px);
+    }
+
+    &.propellerads {
+        .stitches-clients2(-161px, -10px, 180px, 48px);
+    }
+
+    &.zeropark {
+        .stitches-clients2(-161px, -78px, 150px, 34px);
+    }
+}
+
 .algo-1, .algo-2, .algo-3, .algo-4, .botsafe, .displaybanners, .inc-roi, .mobile-popunder, .mobilebanners, .performane, .popunder, .registration, .ssps, .statistics, .support, .tracking, .code-bg, .change-target, .disable-plos, .stop-cr {
 	background-position: left top;
 }
