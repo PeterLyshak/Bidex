@@ -1,0 +1,99 @@
+.error-500 {
+	width: 100%;
+	background-color: #fff;
+}
+
+@media @mobile {
+	.error-500 {
+		background-image: url("../img/error-500-bg.png");
+		background-size: 90% auto;
+		background-position: bottom center;
+		background-repeat: no-repeat;
+		
+		padding-top: 50px;
+		padding-bottom: 200px;
+		
+		&__text {
+			text-transform: uppercase;
+			font-family: "Proxima Nova";
+			font-size: 20px;
+			font-weight: 700;
+			line-height: 24px;
+			max-width: 100%;
+			padding-left: 10px;
+			padding-right: 10px;
+			
+			.yellow {
+				color: #ffd602;
+				font-weight: 900 !important;
+			}
+		}
+		
+		
+	}
+}
+
+
+@media @tablet {
+	.error-500 {
+		background-image: url("../img/error-500-bg.png");
+		background-size: 90% auto;
+		background-position: bottom center;
+		background-repeat: no-repeat;
+		
+		padding-top: 50px;
+		padding-bottom: 250px;
+		
+		&__text {
+			text-transform: uppercase;
+			font-family: "Proxima Nova";
+			font-size: 32px;
+			font-weight: 700;
+			line-height: 34px;
+			max-width: 540px;
+			padding-left: 20px;
+			
+			.yellow {
+				color: #ffd602;
+				font-weight: 900 !important;
+			}
+		}
+		
+		
+	}
+}
+
+@media @desktop {
+	.error-500 {
+		background-image: url("../img/error-500-bg.png");
+		background-size: auto 90%;
+		background-position: center center;
+		background-repeat: no-repeat;
+		
+		padding-top: 230px;
+		padding-bottom: 250px;
+		
+		&__text {
+			text-transform: uppercase;
+			font-family: "Proxima Nova";
+			font-size: 32px;
+			font-weight: 700;
+			line-height: 34px;
+			max-width: 540px;
+			
+			.yellow {
+				color: #ffd602;
+				font-weight: 900 !important;
+			}
+		}
+		
+	}
+}
+
+
+
+
+
+
+
+
